@@ -1,0 +1,4 @@
+# Settings kept even if sdkconfig is deleted and regenerated.
+# LVGL fonts used by main/ui.c (only size 14 is on by default).
+CONFIG_LV_FONT_MONTSERRAT_28=y
+CONFIG_LV_FONT_MONTSERRAT_48=y

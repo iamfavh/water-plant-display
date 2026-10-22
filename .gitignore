@@ -1,0 +1,51 @@
+# Note: git doesn't support comments at the end of a pattern line, so comments go on their own line.
+
+# ESP-IDF build output
+build/
+*.bin
+*.elf
+*.map
+flasher_args.json
+
+# Generated from sdkconfig.defaults + Kconfig defaults on first build.
+# Put settings that must survive a fresh clone in sdkconfig.defaults.
+sdkconfig
+sdkconfig.old
+
+# Downloaded by the component manager from main/idf_component.yml.
+# dependencies.lock is committed so everyone gets the same versions.
+managed_components/
+
+# Local ESP-IDF tool installs
+.espressif/
+
+# CMake / language server
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+.clangd/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor: machine-specific settings (IDF install path, serial port)
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+.directory
